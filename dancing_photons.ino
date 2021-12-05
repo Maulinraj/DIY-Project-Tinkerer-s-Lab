@@ -14,18 +14,18 @@ void loop()
                                                           //then sensor would return the value as 1
   
   //Serial.println(sensorvalue);
-  if (ss == 1023)                             //sensorvalue == 1       
+  if (ss == 1023)                             //my sensor gives high value for low amplitude signal :(       
   {
-     digitalWrite(led, LOW);
+     analogWrite(led, 0);
   }
   
-  else if(sensorvalue == 28)
+  else if(sensorvalue == 28)              //for high amplitude sound
   {
     analogWrite(led, 255);
    
  
   }
-  else{
+  else{                                // for any other intermediate amplitude
     
     analogWrite(led, 240);
     }
