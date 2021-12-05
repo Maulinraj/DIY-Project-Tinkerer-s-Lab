@@ -1,3 +1,3 @@
-# DIY-Project-Tinkerer-s-Lab
+# DIY-Project-Tinkerers-Lab
 
 In this project I have attempted to synchronize input music beats with RGB leds. I have used a sound sensor to receive the incoming sound. Now the sound sensor transmits this info to the arduino uno board,(so depending upon the amplitude of sound the sensor sends a high value or a low value(as compared to a threshold amplitude)to arduino board). Depending upon the received information the code decides whether to light the LEDs bright(to be executed for high amplitude signal) or to leave them in off state only[or may be light LEDs dim](to be executed for low amplitude signal).
